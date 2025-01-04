@@ -111,6 +111,9 @@
 /// NEVER run this on live, it's for simulating highpop only
 // #define VERB_STRESS_TEST
 
+#define FORCE_MAP "citystation"
+#define FORCE_MAP_DIRECTORY "_maps"
+
 #ifdef VERB_STRESS_TEST
 /// Uncomment this to force all verbs to run into overtime all of the time
 /// Essentially negating the reserve 2%
@@ -121,14 +124,9 @@
 #endif
 
 #ifndef PRELOAD_RSC //set to:
-#define PRELOAD_RSC 1 // 0 to allow using external resources or on-demand behaviour;
+#define PRELOAD_RSC 2 // 0 to allow using external resources or on-demand behaviour;
 #endif // 1 to use the default behaviour;
 								// 2 for preloading absolutely everything;
-
-#ifdef LOWMEMORYMODE
-#define FORCE_MAP "runtimestation"
-#define FORCE_MAP_DIRECTORY "_maps"
-#endif
 
 //Additional code for the above flags.
 #ifdef TESTING

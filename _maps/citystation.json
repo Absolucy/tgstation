@@ -1,0 +1,30 @@
+{
+	"version": 1,
+	"map_name": "CityStation",
+	"map_path": "map_files/citystation",
+	"map_file": "citystation.dmm",
+	"traits": [
+		{
+			"Gravity": true,
+			"No Parallax": true,
+			"Up": true,
+			"Linkage": "Cross"
+		},
+		{
+			"Gravity": true,
+			"No Parallax": true,
+			"Down": true,
+			"Linkage": "Cross",
+			"Baseturf": "/turf/open/misc/dirt/station"
+		}
+	],
+	"minetype": "none",
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
+	"planetary": 1,
+	"job_changes": {
+		"Captain": {
+			"special_charter": "city"
+		}
+	}
+}
