@@ -42,7 +42,7 @@
 	///If there is an active hotspot on us store a reference to it here
 	var/obj/effect/hotspot/active_hotspot
 	/// air will slowly revert to initial_gas_mix
-	var/planetary_atmos = TRUE
+	var/planetary_atmos = FALSE
 	/// once our paired turfs are finished with all other shares, do one 100% share
 	/// exists so things like space can ask to take 100% of a tile's gas
 	var/run_later = FALSE
