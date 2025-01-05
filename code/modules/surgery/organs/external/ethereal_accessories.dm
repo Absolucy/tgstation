@@ -29,12 +29,9 @@
 /obj/item/organ/tail/ethereal
 	name = "ethereal tail"
 	desc = "A severed ethereal tail, it reminds you of a bundle of fiber optic cable."
-	icon_state = "ethereal_horns"
-	icon = 'icons/obj/medical/organs/organs.dmi'
 
 	preference = "feature_ethereal_tail"
 
-	use_mob_sprite_as_obj_sprite = TRUE
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/ethereal
 
 /datum/bodypart_overlay/mutant/tail/ethereal
