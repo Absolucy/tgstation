@@ -14,21 +14,23 @@
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
 		TRAIT_FIXED_MUTANT_COLORS,
-		TRAIT_AGENDER,
 	)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	species_cookie = /obj/item/food/energybar
 	species_language_holder = /datum/language_holder/ethereal
-	sexes = FALSE //no fetish content allowed
 	// Body temperature for ethereals is much higher than humans as they like hotter environments
 	bodytemp_normal = (BODYTEMP_NORMAL + 50)
 	bodytemp_heat_damage_limit = FIRE_MINIMUM_TEMPERATURE_TO_SPREAD // about 150C
 	// Cold temperatures hurt faster as it is harder to move with out the heat energy
 	bodytemp_cold_damage_limit = (T20C - 10) // about 10c
 	hair_color_mode = USE_FIXED_MUTANT_COLOR
-	hair_alpha = 140
-	facial_hair_alpha = 140
+	hair_alpha = 180
+	facial_hair_alpha = 180
 
+	mutant_organs = list(
+		/obj/item/organ/ethereal_horns = "None",
+		/obj/item/organ/tail/ethereal = "None",
+	)
 	bodypart_overrides = list(
 		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/ethereal,
 		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/ethereal,
@@ -101,6 +103,12 @@
 		ethereal_light.set_light_range_power_color(1 + (2 * healthpercent), 1 + (1 * healthpercent), current_color)
 		ethereal_light.set_light_on(TRUE)
 		fixed_mut_color = current_color
+		if(ethereal.organs_slot["horns"])
+			var/obj/item/organ/horms = ethereal.organs_slot["horns"]
+			horms.bodypart_overlay.draw_color = current_color
+		if(ethereal.organs_slot["tail"])
+			var/obj/item/organ/tail/tail = ethereal.organs_slot["tail"]
+			tail.bodypart_overlay.draw_color = current_color
 		ethereal.update_body()
 		ethereal.set_facial_haircolor(current_color, override = TRUE, update = FALSE)
 		ethereal.set_haircolor(current_color, override = TRUE,  update = TRUE)
@@ -108,6 +116,12 @@
 		ethereal_light.set_light_on(FALSE)
 		var/dead_color = rgb(128,128,128)
 		fixed_mut_color = dead_color
+		if(ethereal.organs_slot["horns"])
+			var/obj/item/organ/horms = ethereal.organs_slot["horns"]
+			horms.bodypart_overlay.draw_color = dead_color
+		if(ethereal.organs_slot["tail"])
+			var/obj/item/organ/tail/tail = ethereal.organs_slot["tail"]
+			tail.bodypart_overlay.draw_color = dead_color
 		ethereal.update_body()
 		ethereal.set_facial_haircolor(dead_color, override = TRUE, update = FALSE)
 		ethereal.set_haircolor(dead_color, override = TRUE, update = TRUE)

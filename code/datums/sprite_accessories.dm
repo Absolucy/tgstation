@@ -2430,3 +2430,59 @@
 /datum/sprite_accessory/moth_markings/dipped
 	name = "Dipped"
 	icon_state = "dipped"
+
+/datum/sprite_accessory/ethereal_horns
+	icon = 'icons/mob/human/species/ethereal/ethereal_horns.dmi'
+	color_src = MUTANT_COLOR
+
+/datum/sprite_accessory/ethereal_horns/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/ethereal_horns/short
+	name = "Short"
+	icon_state = "short"
+
+/datum/sprite_accessory/ethereal_horns/helm
+	name = "Helm"
+	icon_state = "helm"
+
+/datum/sprite_accessory/ethereal_horns/lunar
+	name = "Lunar"
+	icon_state = "lunar"
+
+/datum/sprite_accessory/ethereal_horns/inward
+	name = "Inward"
+	icon_state = "inward"
+
+/datum/sprite_accessory/ethereal_horns/majesty
+	name = "Majesty"
+	icon_state = "majesty"
+
+/datum/sprite_accessory/ethereal_horns/clipped
+	name = "Clipped"
+	icon_state = "clipped"
+
+/datum/sprite_accessory/ethereal_horns/sharp
+	name = "Sharp"
+	icon_state = "sharp"
+
+/datum/sprite_accessory/tails/ethereal
+	icon = 'icons/mob/human/species/ethereal/ethereal_tail.dmi'
+	color_src = MUTANT_COLOR
+
+/datum/sprite_accessory/tails/ethereal/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/tails/ethereal/long
+	name = "Long"
+	icon_state = "long"
+
+/datum/sprite_accessory/tails/ethereal/bifurcated
+	name = "Bifurcated"
+	icon_state = "bifurcated"
+
+/datum/sprite_accessory/tails/ethereal/stubby
+	name = "Stubby"
+	icon_state = "stubby"
