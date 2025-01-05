@@ -51,6 +51,8 @@
 	occupant_actions = list()
 	generate_actions()
 	ADD_TRAIT(src, TRAIT_CASTABLE_LOC, INNATE_TRAIT)
+	if(mapload && key_type)
+		new key_type(drop_location())
 
 /obj/vehicle/Destroy(force)
 	QDEL_NULL(trailer)
