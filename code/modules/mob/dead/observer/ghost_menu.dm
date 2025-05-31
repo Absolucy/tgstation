@@ -147,6 +147,11 @@ GLOBAL_DATUM_INIT(ghost_menu, /datum/ghost_menu, new)
 	for(var/level in ghost_lightings)
 		data["darkness_levels"] += ghost_lightings[level]
 	data["lag_switch_on"] = !!(SSlag_switch.measures[DISABLE_GHOST_ZOOM_TRAY] && !user.client?.holder)
+	data["icons"] = list(
+		"mob" = text_ref('icons/mob/simple/mob.dmi'),
+		"wallmounts" = text_ref('icons/obj/machines/wallmounts.dmi'),
+		"ai_cards" = text_ref()
+	)
 	return data
 
 /datum/ghost_menu/proc/tray_view(mob/dead/observer/user)

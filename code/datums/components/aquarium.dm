@@ -615,7 +615,7 @@
 				"fish_ref" = REF(fish),
 				"fish_name" = uppertext(fish.name),
 				"fish_happiness" = fish.get_happiness_value(),
-				"fish_icon" = fish::icon,
+				"fish_icon" = text_ref(fish::icon),
 				"fish_icon_state" = fish::icon_state,
 				"fish_health" = fish.health,
 			))
@@ -623,7 +623,7 @@
 		.["propData"] += list(list(
 			"prop_ref" = REF(item),
 			"prop_name" = item.name,
-			"prop_icon" = item::icon,
+			"prop_icon" = text_ref(item::icon),
 			"prop_icon_state" = item::icon_state,
 		))
 

@@ -105,7 +105,7 @@
 				"name" = AG.name,
 				"cost" = AG.cost,
 				"desc" = AG.description,
-				"icon" = gear_path::icon,
+				"icon" = text_ref(gear_path::icon),
 				"icon_state" = gear_path::icon_state,
 			))
 		data["categories"] += list(cat)

@@ -51,7 +51,7 @@
 				type = "cell line",
 				name = cell_line.name,
 				desc = cell_line.desc,
-				icon = resulting_atom ? initial(resulting_atom.icon) : "",
+				icon = resulting_atom ? text_ref(initial(resulting_atom.icon)) : "",
 				icon_state = resulting_atom ? initial(resulting_atom.icon_state) : "",
 				consumption_rate = cell_line.consumption_rate * SSMACHINES_DT,
 				growth_rate = cell_line.growth_rate * SSMACHINES_DT,

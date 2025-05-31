@@ -77,7 +77,7 @@
 			"stack_name" = managed_stack.name,
 			"stack_amount" = managed_stack.amount,
 			"stack_maximum_amount" = managed_stack.max_amount,
-			"stack_icon" = managed_stack.icon,
+			"stack_icon" = text_ref(managed_stack.icon),
 			"stack_icon_state" = managed_stack.icon_state,
 		))
 
@@ -85,7 +85,7 @@
 
 /datum/action/repairbot_resources/ui_static_data(mob/user)
 	var/list/data = list()
-	data["repairbot_icon"] = 'icons/ui/repairbotmanagement/repairbot_smile.dmi'
+	data["repairbot_icon"] = text_ref('icons/ui/repairbotmanagement/repairbot_smile.dmi')
 	data["repairbot_icon_state"] = "repairbot_smile"
 	return data
 

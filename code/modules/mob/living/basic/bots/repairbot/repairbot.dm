@@ -301,7 +301,7 @@
 
 		data["repairbot_materials"] += list(list(
 			"material_ref" = REF(to_retrieve),
-			"material_icon" = to_retrieve::icon,
+			"material_icon" = text_ref(to_retrieve::icon),
 			"material_icon_state" = to_retrieve::icon_state,
 		))
 

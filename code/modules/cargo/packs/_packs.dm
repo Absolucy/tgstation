@@ -53,7 +53,7 @@
 	for(var/obj/item/item as anything in contains)
 		var/list/item_data = list(
 			"name" = item.name,
-			"icon" = item.greyscale_config ? null : item.icon,
+			"icon" = item.greyscale_config ? null : text_ref(item.icon),
 			"icon_state" = item.greyscale_config ? null : item.icon_state,
 			"amount" = contains[item]
 		)

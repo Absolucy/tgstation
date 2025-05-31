@@ -190,7 +190,7 @@
 			"cost" = pack.get_cost() * get_discount(),
 			"id" = pack_id,
 			"desc" = pack.desc || pack.name, // If there is a description, use it. Otherwise use the pack's name.
-			"first_item_icon" = first_item?.icon,
+			"first_item_icon" = text_ref(first_item?.icon),
 			"first_item_icon_state" = first_item?.icon_state,
 			"goody" = pack.goody,
 			"access" = pack.access,

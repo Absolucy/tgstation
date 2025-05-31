@@ -111,7 +111,7 @@ GLOBAL_LIST_EMPTY(order_console_products)
 			"cat" = item.category_index,
 			"ref" = REF(item),
 			"cost" = round(item.cost_per_order * cargo_cost_multiplier),
-			"icon" = item.purchase_path::icon,
+			"icon" = text_ref(item.purchase_path::icon),
 			"icon_state" = item.purchase_path::icon_state,
 		))
 	return data

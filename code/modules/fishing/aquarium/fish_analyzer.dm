@@ -104,7 +104,7 @@
 		var/obj/item/evolution_fish = evolution.new_fish_type
 		fish_evolutions += list(list(
 			"evolution_name" = evolution.name,
-			"evolution_icon" = evolution_fish::icon,
+			"evolution_icon" = text_ref(evolution_fish::icon),
 			"evolution_icon_state" = evolution_fish::icon_state,
 			"evolution_probability" = evolution.probability,
 			"evolution_conditions" = evolution.conditions_note,
@@ -116,7 +116,7 @@
 
 	data["fish_list"] += list(list(
 		"fish_name" = fishie.name,
-		"fish_icon" = fishie.icon,
+		"fish_icon" = text_ref(fishie.icon),
 		"fish_icon_state" = fishie.base_icon_state,
 		"fish_health" = fishie.status == FISH_DEAD ? 0 : PERCENT(fishie.health/initial(fishie.health)),
 		"fish_size" = fishie.size,

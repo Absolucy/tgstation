@@ -5,7 +5,7 @@
 	for(var/datum/search_object/index as anything in contents)
 		UNTYPED_LIST_ADD(items, list(
 			"icon_state" = index.icon_state,
-			"icon" = index.icon,
+			"icon" = text_ref(index.icon),
 			"name" = index.name,
 			"path" = index.path,
 			"ref" = REF(index),

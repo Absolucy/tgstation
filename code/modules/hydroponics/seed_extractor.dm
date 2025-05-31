@@ -272,7 +272,7 @@
 		var/trait_data = list(list(
 			"path" = trait.type,
 			"name" = trait.get_name(),
-			"icon" = trait.icon,
+			"icon" = text_ref(trait.icon),
 			"description" = trait.description
 		))
 		data["trait_db"] += trait_data

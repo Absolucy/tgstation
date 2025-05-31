@@ -274,7 +274,7 @@
 			category_list["containers"] += list(list(
 				"ref" = REF(container),
 				"name" = initial(container.name),
-				"icon" = initial(container.icon),
+				"icon" = text_ref(initial(container.icon)),
 				"icon_state" = initial(container.icon_state),
 				"volume" = initial(container.volume),
 			))

@@ -170,11 +170,6 @@ type ByondType = {
   loadJs(url: string): void;
 
   /**
-   * Maps icons to their ref
-   */
-  iconRefMap: Record<string, string>;
-
-  /**
    * Downloads a blob, platform-agnostic
    */
   saveBlob(blob: Blob, filename: string, ext: string): void;

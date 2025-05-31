@@ -148,6 +148,10 @@ GLOBAL_DATUM_INIT(orbit_menu, /datum/orbit_menu, new)
 		"misc" = misc,
 		"npcs" = npcs,
 		"can_observe" = !HAS_TRAIT(user, TRAIT_NO_OBSERVE),
+		"icons" = list(
+			"normal" = text_ref('icons/mob/huds/hud.dmi'),
+			"antag" = text_ref('icons/mob/huds/antag_hud.dmi'),
+		),
 	)
 
 

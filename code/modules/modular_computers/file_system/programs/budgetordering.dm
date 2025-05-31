@@ -101,7 +101,7 @@
 			"cost" = P.get_cost(),
 			"id" = pack,
 			"desc" = P.desc || P.name, // If there is a description, use it. Otherwise use the pack's name.
-			"first_item_icon" = first_item?.icon,
+			"first_item_icon" = text_ref(first_item?.icon),
 			"first_item_icon_state" = first_item?.icon_state,
 			"goody" = P.goody,
 			"access" = P.access,

@@ -377,7 +377,7 @@
 				listofitems[key] = list(
 					"path" = key,
 					"name" = full_capitalize(atom.name),
-					"icon" = atom.icon,
+					"icon" = text_ref(atom.icon),
 					"icon_state" = atom.icon_state,
 					"amount" = 1
 					)

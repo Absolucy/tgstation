@@ -149,7 +149,7 @@
 		var/trait_data = list(list(
 			"path" = trait.type,
 			"name" = trait.get_name(),
-			"icon" = trait.icon,
+			"icon" = text_ref(trait.icon),
 			"description" = trait.description
 		))
 		data["trait_db"] += trait_data
@@ -192,7 +192,7 @@
 			"plant_health" = tray.plant_health,
 			"plant_age" = tray.age,
 			"name" = tray.name,
-			"icon" = tray.icon,
+			"icon" = text_ref(tray.icon),
 			"icon_state" = tray.icon_state,
 			"water" = tray.waterlevel,
 			"water_max" = tray.maxwater,
@@ -222,7 +222,7 @@
 	if(graft)
 		last_scan_data["graft_data"] = list(
 			"name" = graft.parent_name,
-			"icon" = graft.icon,
+			"icon" = text_ref(graft.icon),
 			"icon_state" = graft.icon_state,
 			"yield" = graft.yield,
 			"production" = graft.production,
@@ -244,7 +244,7 @@
 		"icon" = seed.growing_icon,
 		"icon_state" = seed.icon_harvest,
 		"product" = seed.product?.name,
-		"product_icon" = seed.product?.icon,
+		"product_icon" = text_ref(seed.product?.icon),
 		"product_icon_state" = seed.product?.icon_state,
 		"potency" = seed.potency,
 		"yield" = seed.yield,

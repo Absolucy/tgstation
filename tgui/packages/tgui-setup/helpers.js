@@ -373,9 +373,6 @@
         .catch(function () {});
     }
   };
-
-  // Icon cache
-  Byond.iconRefMap = {};
 })();
 
 // Error handling

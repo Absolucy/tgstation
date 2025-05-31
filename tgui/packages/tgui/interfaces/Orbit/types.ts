@@ -10,6 +10,11 @@ export type Antagonist = Observable & {
 
 export type AntagGroup = [string, Antagonist[]];
 
+export type OrbitIcons = {
+  normal: string;
+  antag: string;
+};
+
 export type OrbitData = {
   alive: Observable[];
   antagonists: Antagonist[];
@@ -21,6 +26,7 @@ export type OrbitData = {
   npcs: Observable[];
   orbiting: Observable | null;
   can_observe: BooleanLike;
+  icons: OrbitIcons;
 };
 
 export type Observable = {

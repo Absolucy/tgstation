@@ -122,7 +122,7 @@
 			icon_state = achievement.icon_state
 
 	var/list/result_parameters = list()
-	result_parameters["icon"] = icon_path
+	result_parameters["icon"] = text_ref(icon_path)
 	result_parameters["state"] = icon_state
 	result_parameters["frame"] = icon_frame
 	result_parameters["dir"] = icon_dir
