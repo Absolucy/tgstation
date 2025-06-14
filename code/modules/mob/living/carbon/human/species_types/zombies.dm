@@ -23,6 +23,7 @@
 		TRAIT_RESISTHIGHPRESSURE,
 		TRAIT_RESISTLOWPRESSURE,
 		TRAIT_TOXIMMUNE,
+		TRAIT_COLD_BLOODED,
 		// HIGH FUNCTIONING UNIQUE
 		TRAIT_NOBLOOD,
 		TRAIT_SUCCUMB_OVERRIDE,
@@ -54,10 +55,6 @@
 		'sound/effects/hallucinations/veryfar_noise.ogg',
 		'sound/effects/hallucinations/wail.ogg',
 	)
-
-/// Zombies do not stabilize body temperature they are the walking dead and are cold blooded
-/datum/species/zombie/body_temperature_core(mob/living/carbon/human/humi, seconds_per_tick, times_fired)
-	return
 
 /datum/species/zombie/check_roundstart_eligible()
 	if(check_holidays(HALLOWEEN))
@@ -117,6 +114,7 @@
 		TRAIT_RESISTHIGHPRESSURE,
 		TRAIT_RESISTLOWPRESSURE,
 		TRAIT_TOXIMMUNE,
+		TRAIT_COLD_BLOODED,
 		// INFECTIOUS UNIQUE
 		TRAIT_STABLEHEART, // Replacement for noblood. Infectious zombies can bleed but don't need their heart.
 		TRAIT_STABLELIVER, // Not necessary but for consistency with above

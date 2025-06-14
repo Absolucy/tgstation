@@ -1076,7 +1076,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		return
 
 	//Only stabilise core temp when alive and not in statis
-	if(humi.stat < DEAD && !HAS_TRAIT(humi, TRAIT_STASIS))
+	if(humi.stat < DEAD && !HAS_TRAIT(humi, TRAIT_STASIS) && !HAS_TRAIT(humi, TRAIT_COLD_BLOODED))
 		body_temperature_core(humi, seconds_per_tick, times_fired)
 
 	//These do run in statis
